@@ -1,6 +1,54 @@
-html, body {
+html, body , div{
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+html {
+    overflow: hidden;
+}
+body {
+    background-color: goldenrod;
+}
+
+#title {
+    height: 12%;
+    text-align: center;
+    font-family: "Nimbus Mono L";
+}
+
+#container {
+    display: flex;
+}
+
+#options {
+    display: inline;
+}
+
+
+#left-bar, #right-bar {
+    width: 30%;
+}
+
+#grid {
+    width: 40%;
+    background-color: white;
+    height: max-content;
+    border-style: solid;
+    border-width: 10px;
+    border-color: gold;
+    
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cell {
+    flex-basis: 0;
+    flex-grow: 1;
+    
 }
 
